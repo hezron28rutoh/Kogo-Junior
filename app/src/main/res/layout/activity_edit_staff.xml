@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".admin.EditStaffActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_marginBottom="10dp"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/backtohome"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:padding="5dp"
+            android:src="@drawable/ic_arrow" />
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginBottom="5dp"
+            android:padding="1dp"
+            android:src="@drawable/ic_phone" />
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="1dp"
+            android:src="@drawable/ic_notification" />
+
+    </RelativeLayout>
+</LinearLayout>
+<RelativeLayout
+    android:id="@+id/rel0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.UserListFragment">
+    <LinearLayout
+        android:id="@+id/linea"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/userRecyclerView"
+            tools:listitem="@layout/admin_staff_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvUser"
+        android:textSize="19sp"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold|normal"
+        android:gravity="center"
+        android:layout_below="@id/linea"
+        android:layout_marginTop="160dp"
+        android:layout_marginBottom="180dp"
+        android:text="@string/add_the_user_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="19dp"
+        app:shapeAppearanceOverlay="@style/FabShape5"
+        android:elevation="15dp"
+        app:rippleColor="#FF0000"
+        app:tint="@color/white"
+        app:backgroundTint="@color/purple_500"
+        android:src="@android:drawable/ic_input_add" />
+
+
+</RelativeLayout>
+
+
+
+
+</LinearLayout>

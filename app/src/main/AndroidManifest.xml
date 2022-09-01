@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.kogojunior">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/school_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/school_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KogoJunior">
+        <activity
+            android:name=".AddStaffActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ContactStaffActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.CalenderEventsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.EditStaffActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.EditSchoolServicesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.EditSchoolInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.FeeSummaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DashboardActivity"
+            android:exported="false"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/Theme.KogoJunior.NoActionBar" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SchoolServicesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FeeDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OurStaffActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SchoolCalendarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GeneralInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContactUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentsProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LogInActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

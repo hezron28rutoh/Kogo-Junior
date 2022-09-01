@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "920371133718",
+    "project_id": "kogo-junior-school",
+    "storage_bucket": "kogo-junior-school.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:920371133718:android:62bc2e55bec92a9c4b6437",
+        "android_client_info": {
+          "package_name": "com.example.kogojunior"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "920371133718-r97b52cgb2v2aqid8ago08boevm5cvnb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMbm_0qpOIs5n4FL4inJLSqQUL-YDnUco"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "920371133718-r97b52cgb2v2aqid8ago08boevm5cvnb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
